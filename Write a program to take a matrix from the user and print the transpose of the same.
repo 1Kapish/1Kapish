@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+// Function to take a matrix from the user
+void takeMatrix(int rows, int cols, int matrix[rows][cols]) {
+    printf("Enter the elements of the matrix:\n");
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            printf("Enter element at position (%d, %d): ", i+1, j+1);
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+}
+
+// Function to print the transpose of a matrix
+void printTranspose(int rows, int cols, int matrix[rows][cols]) {
+    printf("Transpose of the matrix:\n");
+    for (int i = 0; i < cols; i++) {
+        for (int j = 0; j < rows; j++) {
+            printf("%d\t", matrix[j][i]);
+        }
+        printf("\n");
+    }
+}
+
+int main() {
+    int rows, cols;
+
+    // Taking input for the matrix dimensions
+    printf("Enter the number of rows: ");
+    scanf("%d", &rows);
+    printf("Enter the number of columns: ");
+    scanf("%d", &cols);
+
+    int userMatrix[rows][cols];
+
+    // Taking input from the user
+    takeMatrix(rows, cols, userMatrix);
+
+    // Printing the transpose of the matrix
+    printTranspose(rows, cols, userMatrix);
+
+    return 0;
+}
