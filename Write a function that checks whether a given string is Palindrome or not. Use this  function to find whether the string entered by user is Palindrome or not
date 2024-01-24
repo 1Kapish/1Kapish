@@ -1,0 +1,39 @@
+
+#include <stdio.h>
+#include <string.h>
+
+// Function to check if a string is a palindrome
+int isPalindrome(char str[]) {
+    int left = 0;
+    int right = strlen(str) - 1;
+
+    while (left < right) {
+        if (str[left] != str[right]) {
+            return 0; // Not a palindrome
+        }
+        left++;
+        right--;
+    }
+
+    return 1; // Palindrome
+}
+
+int main() {
+    char inputString[100];
+
+    // Input: Get the string from the user
+    printf("Enter a string: ");
+    fgets(inputString, sizeof(inputString), stdin);
+
+    // Remove the newline character from the input
+    inputString[strcspn(inputString, "\n")] = '\0';
+
+    // Check if the entered string is a palindrome
+    if (isPalindrome(inputString)) {
+        printf("The entered string is a palindrome.\n");
+    } else {
+        printf("The entered string is not a palindrome.\n");
+    }
+
+    return 0;
+}
