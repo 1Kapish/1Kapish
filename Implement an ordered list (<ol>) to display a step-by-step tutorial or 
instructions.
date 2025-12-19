@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Step-by-Step Tutorial</title>
+</head>
+<body>
+
+    <h2>How to Create a Simple HTML Page</h2>
+
+    <ol>
+        <li>Open a text editor (Notepad, VS Code, etc.).</li>
+        <li>Create a new file and save it with a .html extension.</li>
+        <li>Write the basic HTML structure.</li>
+        <li>Add headings, paragraphs, and images.</li>
+        <li>Save the file and open it in a web browser.</li>
+    </ol>
+
+</body>
+</html>
