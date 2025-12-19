@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Append Paragraph Example</title>
+    <style>
+        #content {
+            border: 1px solid #333;
+            padding: 15px;
+            width: 50%;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        p {
+            background-color: #f2f2f2;
+            padding: 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Append Paragraph Example</h2>
+
+    <button onclick="addParagraph()">Add Paragraph</button>
+
+    <div id="content">
+        <p>Existing paragraph in the div.</p>
+    </div>
+
+    <script>
+        function addParagraph() {
+            // Create a new paragraph element
+            var newPara = document.createElement("p");
+
+            // Set the text content
+            newPara.textContent = "This is a newly added paragraph.";
+
+            // Append the paragraph to the existing div
+            document.getElementById("content").appendChild(newPara);
+        }
+    </script>
+
+</body>
+</html>
