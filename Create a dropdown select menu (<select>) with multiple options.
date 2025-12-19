@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown Menu</title>
+</head>
+<body>
+
+    <h2>Select Your Favorite Subject</h2>
+
+    <form>
+        <label for="subject">Subject:</label><br><br>
+        <select id="subject" name="subject">
+            <option value="">-- Select an option --</option>
+            <option value="maths">Mathematics</option>
+            <option value="science">Science</option>
+            <option value="computer">Computer Science</option>
+            <option value="english">English</option>
+        </select>
+    </form>
+
+</body>
+</html>
