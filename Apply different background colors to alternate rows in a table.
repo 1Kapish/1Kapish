@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alternate Row Colors</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+
+        /* Alternate row colors */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Student Marks Table</h2>
+
+    <table>
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Rahul</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Anita</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Aman</td>
+            <td>78</td>
+        </tr>
+    </table>
+
+</body>
+</html>
