@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Tooltip</title>
+    <style>
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            color: #0066cc;
+        }
+
+        .tooltip .tooltip-text {
+            visibility: hidden;
+            width: 180px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 8px;
+            border-radius: 5px;
+
+            /* Positioning */
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        /* Show tooltip on hover */
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+
+    <p>
+        Hover over this 
+        <span class="tooltip">text
+            <span class="tooltip-text">This is a CSS tooltip message</span>
+        </span>
+        to see more information.
+    </p>
+
+</body>
+</html>
