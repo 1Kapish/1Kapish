@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clickable List Items</title>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+            width: 200px;
+        }
+
+        li {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #333;
+            cursor: pointer;
+        }
+
+        li.clicked {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Clickable List</h2>
+
+    <ul id="itemList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <script>
+        // Select all list items
+        var listItems = document.querySelectorAll("#itemList li");
+
+        // Add click event to each item
+        listItems.forEach(function(item) {
+            item.addEventListener("click", function() {
+                // Toggle 'clicked' class to change background
+                this.classList.toggle("clicked");
+            });
+        });
+    </script>
+
+</body>
+</html>
